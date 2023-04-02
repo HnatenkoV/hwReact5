@@ -1,0 +1,76 @@
+.Theme-dark {
+  background-color: #757575;
+  color: #f8f8f8;
+}
+
+.Theme-light {
+  background-color: #90af77;
+  color: #020202;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hero-card {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(65, 255, 97);
+  margin-bottom: 5px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #000000;
+}
+.hero-card .hero-id {
+  min-width: 40px;
+}
+.hero-card .hero-name {
+  min-width: 380px;
+}
+.hero-card .hero-status {
+  min-width: 100px;
+}
+.hero-card .hero-species {
+  min-width: 200px;
+}
+.hero-card .Theme-dark {
+  background-color: #4CAF50;
+}
+.hero-card .Theme-light {
+  background-color: #880000;
+}
+
+.first-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 2px 0 20px;
+}
+.btn:disabled {
+  background-color: #858585;
+}
+
+.pagination-sec {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */
