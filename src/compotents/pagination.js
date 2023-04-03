@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-const Pagination = ({currentPage, setCurrentPage, maxPages}) => {
+const Pagination = ({classNameBtn, currentPage, setCurrentPage, maxPages}) => {
         let [isDisable, setIsDisable] = useState(false)
 
 
@@ -21,8 +21,8 @@ const Pagination = ({currentPage, setCurrentPage, maxPages}) => {
 
     return (
         <>
-            <button className="btn" disabled={isDisable} onClick={prevPage}>Prev</button>
-            <button className="btn" disabled={currentPage === maxPages} onClick={nextPage}>Next</button>
+            <button className={classNameBtn} disabled={isDisable} onClick={prevPage}>Prev</button>
+            <button className={classNameBtn} disabled={currentPage === maxPages} onClick={nextPage}>Next</button>
         </>
     )
 }

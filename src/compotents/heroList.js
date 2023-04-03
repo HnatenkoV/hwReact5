@@ -1,5 +1,5 @@
 import HeroCard from "./heroCard";
-import LocationCard from "./locationCard";
+import EpisodeCard from "./episodeCard";
 
 
 
@@ -9,8 +9,8 @@ const HeroList = (props) => {
             <div>
             {props.heroList?.results ? props.heroList.results.map((hero, index) => (
                 <HeroCard hero={hero} key={`hero-card-${index}`}>{hero.name}</HeroCard>)) :
-                props.heroList?.results && props.heroList.results.map((location, index) => (
-                <LocationCard location={location} key={`location-card-${index}`}>{location.name}</LocationCard>))
+                props.EpisodeList?.results && props.EpisodeList.results.map((location, index) => (
+                <EpisodeCard location={location} key={`location-card-${index}`}>{location.name}</EpisodeCard>))
             }
             </div>
         </div>

@@ -43,6 +43,35 @@
   background-color: #880000;
 }
 
+.episode-card {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(65, 255, 249);
+  margin-bottom: 5px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #000000;
+}
+.episode-card .hero-id {
+  min-width: 40px;
+}
+.episode-card .hero-name {
+  min-width: 380px;
+}
+.episode-card .hero-status {
+  min-width: 100px;
+}
+.episode-card .hero-species {
+  min-width: 200px;
+}
+.episode-card .Theme-dark {
+  background-color: #4CAF50;
+}
+.episode-card .Theme-light {
+  background-color: #880000;
+}
+
 .first-div {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -63,6 +92,22 @@
   margin: 0 2px 0 20px;
 }
 .btn:disabled {
+  background-color: #858585;
+}
+
+.btn-episode {
+  background-color: #41fff9; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 2px 0 20px;
+}
+.btn-episode:disabled {
   background-color: #858585;
 }
 

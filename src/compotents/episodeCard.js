@@ -1,8 +1,8 @@
 import '../css/style.css'
 
-const LocationCard = (props) => {
+const EpisodeCard = (props) => {
     return (
-        <div className="hero-card">
+        <div className="episode-card">
             <div className="hero-id">{props.location.id}</div>
             <div className="hero-name">{props.location.name}</div>
         </div>
@@ -10,4 +10,4 @@ const LocationCard = (props) => {
 }
 
 
-export default LocationCard
+export default EpisodeCard
