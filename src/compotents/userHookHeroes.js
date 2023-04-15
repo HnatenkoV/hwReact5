@@ -3,6 +3,8 @@ import HeroList from "./heroList";
 import React, {useState} from "react";
 import Pagination from "./pagination";
 import "../css/style.css"
+import {Outlet} from "react-router-dom";
+import Hero from "./hero";
 
 
 const UserHookHeroes = () => {
@@ -18,6 +20,7 @@ const UserHookHeroes = () => {
 
 
     return <>
+        <Outlet/>
         <div>
         {loading ? <p>Loading...</p> : <HeroList heroList={data}/>}
         <Pagination classNameBtn="btn" currentPage = {currentPage} setCurrentPage = {setCurrentPage} maxPages={maxPage}/>

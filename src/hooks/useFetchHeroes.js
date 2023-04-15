@@ -9,12 +9,15 @@ const useFetchHeroes = (page) => {
 
 
     useEffect(() => {
-            axios.get(page).then(resp => {
-                setError(resp.data.error);
-                setData(resp.data);
-                setLoading(false);
-                setMaxPage(resp.data.info?.pages)
-            });
+            axios
+                .get(page)
+                .then((response) => {
+                        setData(response.data);
+                        setError(response.data.error);
+                        setLoading(false);
+                        setMaxPage(response.data.info?.pages)
+
+                });
 
 
     }, [page])

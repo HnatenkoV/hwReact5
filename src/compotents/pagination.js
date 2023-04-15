@@ -20,10 +20,10 @@ const Pagination = ({classNameBtn, currentPage, setCurrentPage, maxPages}) => {
 
 
     return (
-        <>
+        <div className="pagination">
             <button className={classNameBtn} disabled={isDisable} onClick={prevPage}>Prev</button>
             <button className={classNameBtn} disabled={currentPage === maxPages} onClick={nextPage}>Next</button>
-        </>
+        </div>
     )
 }
 
